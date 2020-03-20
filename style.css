@@ -2,3 +2,60 @@
 Theme Name: PGD Malecnik Theme
 Author: Ziga Lah
 */
+:root{
+    --gray: #f7edf0;
+    --red: #d61525;
+    --darkGray: #403f4c;
+    --darkestGray:#25242e;
+    --lightRed: #e84855;
+    --yellow: #f9dc5c;
+}
+html{
+    padding: 0;
+    margin: 0 !important;
+}
+body{
+    margin: 0 !important;
+    background-color: var(--darkestGray);
+}
+nav{
+    background: rgba(64, 63, 76,0.8) !important;
+}
+nav a{
+    text-transform: uppercase;
+    vertical-align: bottom !important;
+}
+.nav-link{
+    font-size: 1.3em;
+    color: var(--gray) !important;
+}
+.nav-link:hover{
+    color: var(--red) !important;
+}
+.logoPrefix{
+    color: var(--gray);
+    font-size: 3em;
+    font-weight: bold;
+}
+.logoSuffix{
+    color: var(--red);
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.navbar-brand{
+    margin-left: 10%;
+}
+#navbarSupportedContent{
+    margin-left: 10%;
+}
+.thumbnail{
+    width: 100%;
+}
+.thumbnail img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
