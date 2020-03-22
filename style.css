@@ -26,28 +26,34 @@ nav{
     background: rgba(64, 63, 76,0.8) !important;
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 nav a{
     text-transform: uppercase;
     vertical-align: bottom !important;
 }
+
 .navbar{
     position: absolute;
     width: 100%;
 }
+
 .nav-link{
     font-size: 20px;
     color: var(--gray) !important;
 }
+
 .nav-link:hover{
     color: var(--red) !important;
 }
+
 .logoPrefix{
     color: var(--gray);
     font-size: 30px;
     font-weight: bold;
 }
+
 .logoSuffix{
     color: var(--red);
     opacity: 1;
@@ -58,12 +64,16 @@ nav a{
 .navbar-brand{
     margin-left: 10%;
 }
+
 #navbarSupportedContent{
     margin-left: 10%;
 }
+
 .thumbnail{
     width: 100%;
+    position: relative;
 }
+
 .thumbnail img{
     z-index: -1;
     width: 100%;
@@ -99,36 +109,95 @@ nav a{
     padding: 2.5%;
     margin: 0 !important;
 }
+
 .basicInfo i{
     color: var(--red);
     font-size: 400%;
     padding: 5% 0 25% 0;
+    transition: 0.5s;
 }
+
 .desc{
     font-size: 95%;
 }
+
 .basicInfo i:hover{
     color: black;
     cursor: pointer;
 }
+
 .basicInfoHeader{
     font-size: 135%;
     font-weight: 450;
 }
+
+.youth{
+    position: relative;
+}
+
+.youth img{
+    width: 100%;
+}
+
+.youthText{
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    z-index: 1;
+}
+
+.youthText h1{
+    font-size: 65px;
+    font-weight: 750;
+    text-transform: uppercase;
+}
+
+.youthText button{
+    padding: 30px 80px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 550;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--red);
+    transition: 0.5s;
+}
+
+.youthText button:hover{
+    background-color: black;
+}
+
+.actions{
+    background-color: var(--gray);
+}
+.actions h1{
+    margin: 0;
+    padding: 10% 0 10% 0;
+    text-align: center;
+}
 @media(max-width: 1000px) {
     nav{
         z-index: 2;
+
     }
+
     .nav-link{
         font-size: 16px;
     }
+
     .thumbnail img{
         height: 60vh;
     }
+
     .thumbnail .description{
         margin: 15% 0 0 50%;
         top: 40%
     }
+
     .description h1{
         font-size: 30px;
     }

@@ -138,4 +138,33 @@ function pgdmBasicInfoCallout($wp_customize){
         'settings'=>'pgdmBasicInfoCalloutBasicInfoSub4Text')));
 }
 add_action('customize_register','pgdmBasicInfoCallout');
+
+function pgdYouthCallout($wp_customize){
+    $wp_customize->add_section('pgdYouthCalloutSection',array('title'=>'Mladina'));
+
+    $wp_customize->add_setting('pgdYouthCalloutSectionHeader', array('default' => 'Pridruži se naši mladini!'));
+    $wp_customize->add_setting('pgdYouthCalloutSectionP', array('default' => 'Fantje in dekleta vseh starosti'));
+    $wp_customize->add_setting('pgdYouthCalloutSectionButton', array('default' => 'pridruži se'));
+    $wp_customize->add_setting('pgdYouthCalloutSectionImage',array());
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdYouthCalloutSectionHeaderControl',array(
+        'label'=>'Besedilo v sliki',
+        'section'=>'pgdYouthCalloutSection',
+        'settings'=>'pgdYouthCalloutSectionHeader')));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdYouthCalloutSectionPControl',array(
+        'label'=>'Opis',
+        'section'=>'pgdYouthCalloutSection',
+        'settings'=>'pgdYouthCalloutSectionP')));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdYouthCalloutSectionButtonControl',array(
+        'label'=>'Gumb',
+        'section'=>'pgdYouthCalloutSection',
+        'settings'=>'pgdYouthCalloutSectionButton')));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdYouthCalloutSectionImageControl',array(
+        'label'=>'Slika',
+        'section'=>'pgdYouthCalloutSection',
+        'settings'=>'pgdYouthCalloutSectionImage',
+        )));
+}
+add_action('customize_register','pgdYouthCallout');
 ?>
