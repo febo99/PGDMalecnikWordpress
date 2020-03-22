@@ -2,6 +2,7 @@
 Theme Name: PGD Malecnik Theme
 Author: Ziga Lah
 */
+
 :root{
     --gray: #f7edf0;
     --red: #d61525;
@@ -10,23 +11,33 @@ Author: Ziga Lah
     --lightRed: #e84855;
     --yellow: #f9dc5c;
 }
+
 html{
     padding: 0;
     margin: 0 !important;
 }
+
 body{
     margin: 0 !important;
     background-color: var(--darkestGray);
 }
+
 nav{
     background: rgba(64, 63, 76,0.8) !important;
+    margin: 0;
+    padding: 0;
 }
+
 nav a{
     text-transform: uppercase;
     vertical-align: bottom !important;
 }
+.navbar{
+    position: absolute;
+    width: 100%;
+}
 .nav-link{
-    font-size: 1.3em;
+    font-size: 20px;
     color: var(--gray) !important;
 }
 .nav-link:hover{
@@ -34,13 +45,14 @@ nav a{
 }
 .logoPrefix{
     color: var(--gray);
-    font-size: 3em;
+    font-size: 30px;
     font-weight: bold;
 }
 .logoSuffix{
     color: var(--red);
-    font-size: 3em;
-    font-weight: lighter;
+    opacity: 1;
+    font-size: 30px;
+    font-weight: 250;
 }
 
 .navbar-brand{
@@ -53,9 +65,75 @@ nav a{
     width: 100%;
 }
 .thumbnail img{
-    position: absolute;
-    top: 0;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
+.description{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    margin: 15% 0 0 50%;
+    padding: 0;
+}
+.description h1{
+    color: var(--gray);
+    font-size: 75px;
+    font-weight: 500;
+}
+
+.description p{
+    color: var(--gray);
+    font-size: 32px;
+}
+
+.basicInfo{
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray);
+    text-align: center;
+}
+
+.basicInfo h1{
+    text-align: center;
+    padding: 2.5%;
+    margin: 0 !important;
+}
+.basicInfo i{
+    color: var(--red);
+    font-size: 400%;
+    padding: 5% 0 25% 0;
+}
+.desc{
+    font-size: 95%;
+}
+.basicInfo i:hover{
+    color: black;
+    cursor: pointer;
+}
+.basicInfoHeader{
+    font-size: 135%;
+    font-weight: 450;
+}
+@media(max-width: 1000px) {
+    nav{
+        z-index: 2;
+    }
+    .nav-link{
+        font-size: 16px;
+    }
+    .thumbnail img{
+        height: 60vh;
+    }
+    .thumbnail .description{
+        margin: 15% 0 0 50%;
+        top: 40%
+    }
+    .description h1{
+        font-size: 30px;
+    }
+    
+    .description p{
+        font-size: 14px;
+    }
+  }

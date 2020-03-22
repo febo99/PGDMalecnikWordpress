@@ -1,41 +1,48 @@
 <?php get_header();?>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#">
-            <!-- <img src="<?php echo get_template_directory_uri() ?>/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-            <span class='logoPrefix'>pgd.</span><span class='logoSuffix'>malečnik</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Domov <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">O nas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Zgodovina</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Intervencije</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Novice & obvestila</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Arhiv</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
-            </li>
-            </ul>
-        </div>
-    </nav>
     <div class='thumbnail'>
-        <img src='<?php echo get_template_directory_uri() ?>/images/thumbnail.jpg'>
+        <img src='<?php echo get_theme_mod('pgdmThumbnailCalloutImage');?>'>
     </div>
-    <div class='container'>
+    <div class='description'>
+        <h1><?php echo get_theme_mod('pgdmThumbnailCalloutHeadlineImage'); ?></h1>
+        <p>
+        <?php echo get_theme_mod('pgdmThumbnailCalloutImageText'); ?>
+        </p>
     </div>
+    <div class='basicInfo'>
+        <div class="container">
+            <h1><?php echo get_theme_mod('pgdmBasicInfoCalloutBasicInfoHeadline');?></h1>
+                <div class="row">
+                    <div class="col-sm">
+                        <i class="fas fa-fire"></i>
+                        <h3 class='basicInfoHeader'><?php echo get_theme_mod('pgdmBasicInfoCalloutBasicInfoSub1');?></h3>
+                        <p class='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Pellentesque lobortis lorem a pulvinar accumsan. Suspendisse potenti. 
+                            Curabitur at tellus in eros ultricies pharetra.</p>
+                    </div>
+                    <div class="col-sm">
+                        <i class="fas fa-fire-extinguisher"></i>
+                        <h3 class='basicInfoHeader'><?php echo get_theme_mod('pgdmBasicInfoCalloutBasicInfoSub2');?></h3>
+                        <p class='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Pellentesque lobortis lorem a pulvinar accumsan. Suspendisse potenti. 
+                            Curabitur at tellus in eros ultricies pharetra.</p>
+                    </div>
+                    <div class="col-sm">
+                        <i class="fas fa-tree"></i>
+                        <h3 class='basicInfoHeader'><?php echo get_theme_mod('pgdmBasicInfoCalloutBasicInfoSub3');?></h3>                        
+                        <p class='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Pellentesque lobortis lorem a pulvinar accumsan. Suspendisse potenti. 
+                            Curabitur at tellus in eros ultricies pharetra.</p>
+                    </div>
+                    <div class="col-sm">
+                        <i class="fas fa-university"></i>
+                        <h3 class='basicInfoHeader'><?php echo get_theme_mod('pgdmBasicInfoCalloutBasicInfoSub4');?></h3>
+                        <p class='desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Pellentesque lobortis lorem a pulvinar accumsan. Suspendisse potenti. 
+                            Curabitur at tellus in eros ultricies pharetra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <?php get_footer();?>

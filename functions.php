@@ -37,4 +37,105 @@ function loadJS(){
 
 add_action('wp_enqueue_scripts','loadJS');
 
+
+//CUSTOMIZE OPTIONS
+
+function pgdmThumbnailCallout($wp_customize){
+
+    $wp_customize->add_section('pgdmThumbnailCalloutSection',array('title'=>'Naslovnica'));
+
+    $wp_customize->add_setting('pgdmThumbnailCalloutHeadlinePrefix', array('default' => 'PGD'));
+    $wp_customize->add_setting('pgdmThumbnailCalloutHeadlineSuffix', array('default' => 'MALEČNIK'));
+    $wp_customize->add_setting('pgdmThumbnailCalloutHeadlineImage', array('default' => 'Pomagamo že od leta 1932'));
+    $wp_customize->add_setting('pgdmThumbnailCalloutImageText', array('default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'));
+    $wp_customize->add_setting('pgdmThumbnailCalloutImage',array());
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmThumbnailCalloutHeadlineControlPrefixControl',array(
+        'label'=>'Beli naslov',
+        'section'=>'pgdmThumbnailCalloutSection',
+        'settings'=>'pgdmThumbnailCalloutHeadlinePrefix')));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmThumbnailCalloutHeadlineSuffixControl',array(
+        'label'=>'Rdeci naslov',
+        'section'=>'pgdmThumbnailCalloutSection',
+        'settings'=>'pgdmThumbnailCalloutHeadlineSuffix')));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmThumbnailCalloutHeadlineImageControl',array(
+        'label'=>'Naslov v sliki',
+        'section'=>'pgdmThumbnailCalloutSection',
+        'settings'=>'pgdmThumbnailCalloutHeadlineImage')));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmThumbnailCalloutImageTextControl',array(
+        'label'=>'Besedilo v sliki',
+        'section'=>'pgdmThumbnailCalloutSection',
+        'settings'=>'pgdmThumbnailCalloutImageText')));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdmThumbnailCalloutImageControl',array(
+        'label'=>'Slika',
+        'section'=>'pgdmThumbnailCalloutSection',
+        'settings'=>'pgdmThumbnailCalloutImage',
+        )));
+        
+}
+add_action('customize_register','pgdmThumbnailCallout');
+
+function pgdmBasicInfoCallout($wp_customize){
+    $wp_customize->add_section('pgdmBasicInfoCalloutSection',array('title'=>'Osnovne informacije'));
+
+    $wp_customize->add_setting('pgdmBasicInfoCalloutBasicInfoHeadline', array('default' => 'Naše poslanstvo'));
+    $wp_customize->add_setting('pgdmBasicInfoCalloutBasicInfoSub1', array('default' => 'POŽARNA PREVENTIVA'));
+    $wp_customize->add_setting('pgdmBasicInfoCalloutBasicInfoSub1Text', array('default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis lorem a pulvinar accumsan. Suspendisse potenti. Curabitur at tellus in eros ultricies pharetra.'));
+    $wp_customize->add_setting('pgdmBasicInfoCalloutBasicInfoSub2', array('default' => 'GAŠENJE POŽAROV'));
+    $wp_customize->add_setting('pgdmBasicInfoCalloutBasicInfoSub2Text', array('default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis lorem a pulvinar accumsan. Suspendisse potenti. Curabitur at tellus in eros ultricies pharetra.'));
+    $wp_customize->add_setting('pgdmBasicInfoCalloutBasicInfoSub3', array('default' => 'TEHNIČNA POMOČ'));
+    $wp_customize->add_setting('pgdmBasicInfoCalloutBasicInfoSub3Text', array('default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis lorem a pulvinar accumsan. Suspendisse potenti. Curabitur at tellus in eros ultricies pharetra.'));
+    $wp_customize->add_setting('pgdmBasicInfoCalloutBasicInfoSub4', array('default' => 'IZOBRAŽEVANJE'));
+    $wp_customize->add_setting('pgdmBasicInfoCalloutBasicInfoSub4Text', array('default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis lorem a pulvinar accumsan. Suspendisse potenti. Curabitur at tellus in eros ultricies pharetra.'));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmBasicInfoCalloutBasicInfoHeadlineControl',array(
+        'label'=>'Naslov osnovnih informacij',
+        'section'=>'pgdmBasicInfoCalloutSection',
+        'settings'=>'pgdmBasicInfoCalloutBasicInfoHeadline')));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmBasicInfoCalloutBasicInfoSub1Control',array(
+        'label'=>'Prvi podnaslov',
+        'section'=>'pgdmBasicInfoCalloutSection',
+        'settings'=>'pgdmBasicInfoCalloutBasicInfoSub1')));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmBasicInfoCalloutBasicInfoSub1TextControl',array(
+        'type' => 'textarea',
+        'label'=>'Opis 1',
+        'section'=>'pgdmBasicInfoCalloutSection',
+        'settings'=>'pgdmBasicInfoCalloutBasicInfoSub1Text')));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmBasicInfoCalloutBasicInfoSub2Control',array(
+        'label'=>'Drugi podnaslov',
+        'section'=>'pgdmBasicInfoCalloutSection',
+        'settings'=>'pgdmBasicInfoCalloutBasicInfoSub2')));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmBasicInfoCalloutBasicInfoSub2TextControl',array(
+        'type' => 'textarea',
+        'label'=>'Opis 2',
+        'section'=>'pgdmBasicInfoCalloutSection',
+        'settings'=>'pgdmBasicInfoCalloutBasicInfoSub2Text')));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmBasicInfoCalloutBasicInfoSub3Control',array(
+        'label'=>'Tretji podnaslov',
+        'section'=>'pgdmBasicInfoCalloutSection',
+        'settings'=>'pgdmBasicInfoCalloutBasicInfoSub3')));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmBasicInfoCalloutBasicInfoSub3TextControl',array(
+        'type' => 'textarea',
+        'label'=>'Opis 3',
+        'section'=>'pgdmBasicInfoCalloutSection',
+        'settings'=>'pgdmBasicInfoCalloutBasicInfoSub3Text')));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmBasicInfoCalloutBasicInfoSub4Control',array(
+        'label'=>'Četrti podnaslov',
+        'section'=>'pgdmBasicInfoCalloutSection',
+        'settings'=>'pgdmBasicInfoCalloutBasicInfoSub4')));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdmBasicInfoCalloutBasicInfoSub4TextControl',array(
+        'type' => 'textarea',
+        'label'=>'Opis 4',
+        'section'=>'pgdmBasicInfoCalloutSection',
+        'settings'=>'pgdmBasicInfoCalloutBasicInfoSub4Text')));
+}
+add_action('customize_register','pgdmBasicInfoCallout');
 ?>
