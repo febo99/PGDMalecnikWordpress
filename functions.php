@@ -1,4 +1,7 @@
 <?php
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 function loadStylesheets(){
 
     wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
@@ -166,5 +169,16 @@ function pgdYouthCallout($wp_customize){
         'settings'=>'pgdYouthCalloutSectionImage',
         )));
 }
-add_action('customize_register','pgdYouthCallout');
+function pgdFooterCallout($wp_customize){
+    $wp_customize->add_section('pgdFooterCalloutSection',array('title'=>'Noga'));
+
+    $wp_customize->add_setting('pgdFooterCalloutSectionImage',array());
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdFooterCalloutSectionImageControl',array(
+        'label'=>'Slika',
+        'section'=>'pgdFooterCalloutSection',
+        'settings'=>'pgdFooterCalloutSectionImage',
+        )));
+}
+add_action('customize_register','pgdFooterCallout');
 ?>

@@ -179,6 +179,22 @@ nav a{
     padding: 10% 0 10% 0;
     text-align: center;
 }
+
+.articleInfo p{
+    font-size: 16px;
+    display: inline;
+}
+.articleInfo i{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+
+
+footer img{
+    width: 100%;
+    height: 100vh;
+}
 @media(max-width: 1000px) {
     nav{
         z-index: 2;

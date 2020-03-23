@@ -62,9 +62,18 @@
 
                 $myposts = get_posts( $args );
                 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                    <div class='col-sm'>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                        <?php the_content(); ?>
+                    <div class='col-sm article'>
+                        <div class='articleInfo'>
+                            <i class="fas fa-calendar-day"></i>
+                            <p class='date'><?php the_date();?></p>
+                            <i class="fas fa-user"></i>
+                            <p class='author'><?php the_author();?></p>
+                        </div>
+                        <div class='articleContent'>
+                            <?php the_title(); ?>
+                            <?php the_content(); ?>
+                            <a href="<?php the_permalink(); ?>">Preberi več</a>
+                        </div>
                     </div>
                 <?php endforeach; 
                 wp_reset_postdata();?>
@@ -74,17 +83,7 @@
     <div class='news'>
         <div class="container">
             <div class='row'>
-            <?php
-                global $post;
-                $args = array( 'posts_per_page' => 3);
-                $myposts = get_posts( $args );
-                foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                    <div class='col-sm'>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                        <?php the_content(); ?>
-                    </div>
-                <?php endforeach; 
-                wp_reset_postdata();?>
+           
             </div>  
         </div>
     </div>
