@@ -2,6 +2,7 @@
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
+add_theme_support( 'post-thumbnails' );
 function loadStylesheets(){
 
     wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');

@@ -54,12 +54,11 @@
     </div>
     <div class='actions'>
         <div class="container">
-            <h1>INTERVENCIJE</h1>
+            <h1>ZADNJI DOGODKI</h1>
             <div class='row'>
             <?php
                 global $post;
                 $args = array( 'posts_per_page' => 3);
-
                 $myposts = get_posts( $args );
                 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                     <div class='col-sm article'>
@@ -71,7 +70,9 @@
                         </div>
                         <div class='articleContent'>
                             <?php the_title(); ?>
-                            <?php the_content(); ?>
+                            <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+                            <img class='postThumbnail' src="<?php echo $url;?>">
+                            <?php echo the_excerpt(); ?>
                             <a href="<?php the_permalink(); ?>">Preberi več</a>
                         </div>
                     </div>
@@ -80,12 +81,6 @@
             </div>  
         </div>
     </div>
-    <div class='news'>
-        <div class="container">
-            <div class='row'>
-           
-            </div>  
-        </div>
-    </div>
+
 
 <?php get_footer();?>
