@@ -1,6 +1,6 @@
 <?php  get_header();?>
     <div class='thumbnail'>
-        <img src='<?php echo get_template_directory_uri() . "/images/onas.JPG"?>'>
+        <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImage');?>'>
     </div>
     <div class='description'>
         <h1>O nas</h1>
@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class='pioneers thumbnail'>
-    <img src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+    <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageONas');?>'>
     </div>
     <div class='pioneersInfo'>
         <div class='container'>
@@ -38,20 +38,20 @@
             <div class='imageGallery'>
                 <div class='row'>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImagePioneers1');?>'>
                     </div>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImagePioneers2');?>'>
                     </div>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImagePioneers3');?>'>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class='juniors thumbnail'>
-        <img src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+        <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImagePioneers');?>'>
     </div>
     <div class='juniorsInfo'>
         <div class='container'>
@@ -67,24 +67,24 @@
             <div class='3imageGallery'>
                 <div class='row'>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageJuniors1');?>'>
                     </div>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageJuniors2');?>'>
                     </div>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageJuniors3');?>'>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class='veterans thumbnail'>
-        <img src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+        <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageJuniors');?>'>
     </div>
     <div class='veteransInfo'>
         <div class='container'>
-            <h1>Mladinke in mladinci</h1>
+            <h1>Veterani</h1>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sem dui, varius consequat massa in, eleifend viverra ante. Morbi id odio a justo dictum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla faucibus vel elit vitae pellentesque. 
             Cras non felis quis nibh placerat auctor at a tortor. Morbi congue, diam nec elementum congue, magna nunc blandit elit, eget semper nibh ante non sapien. Vestibulum libero tellus, faucibus eu nulla sed, euismod malesuada nibh. Donec enim arcu, commodo sed mi ac, interdum pellentesque ex.
@@ -96,20 +96,20 @@
             <div class='3imageGallery'>
                 <div class='row'>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageVeterans1');?>'>
                     </div>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageVeterans2');?>'>
                     </div>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageVeterans3');?>'>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class='operatives thumbnail'>
-        <img src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+        <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageVeterans');?>'>
     </div>
     <div class='operativeInfo'>
         <div class='container'>
@@ -125,13 +125,13 @@
             <div class='3imageGallery'>
                 <div class='row'>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageOperatives1');?>'>
                     </div>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageOperatives2');?>'>
                     </div>
                     <div class='col-sm'>
-                        <img class='galleryImage' src='<?php echo get_template_directory_uri() . "/images/pionirji.JPG"?>'>
+                        <img class='galleryImage' src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageOperatives3');?>'>
                     </div>
                 </div>
             </div>

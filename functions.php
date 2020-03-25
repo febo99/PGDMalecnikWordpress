@@ -173,6 +173,9 @@ function pgdYouthCallout($wp_customize){
         'settings'=>'pgdYouthCalloutSectionImage',
         )));
 }
+
+include_once('functionsAboutUs.php');
+
 function pgdFooterCallout($wp_customize){
     $wp_customize->add_section('pgdFooterCalloutSection',array('title'=>'Noga'));
 
