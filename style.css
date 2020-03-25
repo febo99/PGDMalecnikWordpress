@@ -6,6 +6,7 @@ Author: Ziga Lah
 :root{
     --gray: #f7edf0;
     --red: #d61525;
+    --lightGray: #aaaaaf;
     --darkGray: #403f4c;
     --darkestGray:#25242e;
     --lightRed: #e84855;
@@ -19,7 +20,7 @@ html{
 
 body{
     margin: 0 !important;
-    background-color: var(--darkestGray);
+    background-color: var(--lightGray);
 }
 
 nav{
@@ -199,7 +200,7 @@ footer img{
     width: 100%;
 }
 #postPage{
-    background-color: var(--darkGray);
+    background-color: var(--lightGray);
     color: black;
     height: 100%;
     padding: 0 0 5% 0;
@@ -230,19 +231,21 @@ footer img{
     padding: 1% 1% 1% 0;
     color: var(--lightRed);
 }
+
 #postPage .postData span{
     padding-right: 4%;
 }
+
 #postPage .date,.author{
     font-style: italic;
 }
+
 #postPage .postContent{
     width: 65%;
     height: auto;
     display: block;
     margin: 0 auto 0 0;
 }
-
 
 
 @media(max-width: 768px) {

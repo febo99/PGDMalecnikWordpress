@@ -13,6 +13,9 @@ function loadStylesheets(){
 
     wp_register_style('style', get_template_directory_uri() . '/style.css', array(), false, 'all');
     wp_enqueue_style('style');
+
+    wp_register_style('aboutus', get_template_directory_uri() . '/aboutus.css', array(), false, 'all');
+    wp_enqueue_style('aboutus');
 }
 
 add_action('wp_enqueue_scripts','loadStylesheets');

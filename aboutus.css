@@ -1,0 +1,26 @@
+:root{
+    --gray: #f7edf0;
+    --red: #d61525;
+    --lightGray: #aaaaaf;
+    --darkGray: #403f4c;
+    --darkestGray:#25242e;
+    --lightRed: #e84855;
+    --yellow: #f9dc5c;
+}
+.aboutus{
+    background-color: var(--lightGray);
+}
+.aboutus h1{
+    color: white;
+}
+
+.textInfo,.pioneersInfo,.juniorsInfo,.veteransInfo,.operativeInfo{
+    padding: 5% 0;
+}
+.imageGallery{
+    padding: 0 0 10% 0;
+}
+.galleryImage{
+    width: 100%;
+    padding: 1%;
+}
