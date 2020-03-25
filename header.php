@@ -18,29 +18,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Domov <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?php echo home_url() ?>">Domov</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about">O nas</a>
+                <a class="nav-link" href="index.php/o-nas">O nas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Zgodovina</a>
+                <a class="nav-link" href="index.php/zgodovina">Zgodovina</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Vozni park</a>
+                <a class="nav-link" href="index.php/vozni-park">Vozni park</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Intervencije</a>
+                <a class="nav-link" href="index.php/intervencije">Intervencije</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Novice</a>
+                <a class="nav-link" href="index.php/novice">Novice</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
+                <a class="nav-link" href="index.php/kontakt">Kontakt</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Za člane</a>
-            </li>
+
             </ul>
         </div>
     </nav>    
