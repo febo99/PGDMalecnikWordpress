@@ -42,6 +42,7 @@ nav a{
 .nav-link{
     font-size: 20px;
     color: var(--gray) !important;
+    padding: 0;
 }
 
 .nav-link:hover{
@@ -60,7 +61,18 @@ nav a{
     font-size: 30px;
     font-weight: 250;
 }
+.dropdown-menu{
+    background-color: rgba(64, 63, 76,1);
+}
+.dropdown-menu a{
+    color: white;
+    font-size: 16px;
+}
 
+.dropdown-menu a:hover{
+    color: red;
+    background-color: transparent;
+}
 .navbar-brand{
     margin-left: 10%;
 }
@@ -82,19 +94,22 @@ nav a{
 .description{
     position: absolute;
     top: 0;
-    width: 50%;
+    width: 40%;
     margin: 15% 0 0 50%;
     padding: 0;
+
 }
 .description h1{
     color: var(--gray);
     font-size: 75px;
+    padding-left: 5%;
     font-weight: 500;
 }
 
 .description p{
     color: var(--gray);
     font-size: 32px;
+    padding-left: 5%;
 }
 
 .basicInfo{
