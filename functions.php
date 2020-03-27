@@ -11,11 +11,14 @@ function loadStylesheets(){
     wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), false, 'all');
     wp_enqueue_style('normalize');
 
-    wp_register_style('style', get_template_directory_uri() . '/style.css', array(), false, 'all');
+    wp_register_style('style', get_template_directory_uri() . '/styles/style.css', array(), false, 'all');
     wp_enqueue_style('style');
 
-    wp_register_style('aboutus', get_template_directory_uri() . '/aboutus.css', array(), false, 'all');
+    wp_register_style('aboutus', get_template_directory_uri() . '/styles/aboutus.css', array(), false, 'all');
     wp_enqueue_style('aboutus');
+
+    wp_register_style('history', get_template_directory_uri() . '/styles/history.css', array(), false, 'all');
+    wp_enqueue_style('history');
 }
 
 add_action('wp_enqueue_scripts','loadStylesheets');
