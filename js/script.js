@@ -1,4 +1,10 @@
 jQuery(document).ready(function(){
+  jQuery('.vehicleNameOverlay').mouseenter(function(){
+    jQuery('#t').fadeTo(750,1);
+  });
+  jQuery('.vehicleNameOverlay').mouseleave(function(){
+    jQuery('#t').fadeTo(200,0)
+  });
     jQuery('.dropdown').hover(function() {
         jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
       }, function() {

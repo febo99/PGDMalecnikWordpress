@@ -28,7 +28,7 @@
                 <a class="nav-link" href="index.php/zgodovina">Zgodovina</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.php/vozni-park">Vozni park</a>
+                <a class="nav-link" href="index.php/vozni-park">Vozila in tehnika</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.php/intervencije">Intervencije</a>

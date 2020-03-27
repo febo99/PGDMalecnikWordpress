@@ -1,0 +1,67 @@
+:root{
+    --gray: #f7edf0;
+    --red: #d61525;
+    --lightGray: #aaaaaf;
+    --darkGray: #403f4c;
+    --darkestGray:#25242e;
+    --lightRed: #e84855;
+    --yellow: #f9dc5c;
+}
+.vehicles{
+    background-color: #e3e1e1;
+    padding: 0 0 10% 0;
+}
+.vehicles h2{
+    text-align: center;
+    padding: 5% 0 5% 0;
+    text-transform: uppercase;
+}
+.vehicle{
+    position: relative;
+    padding: 0;
+}
+.vehicleNameOverlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: var(--red);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.vehicleNameOverlay:hover{
+    opacity: 0.6;
+}
+#t{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    pointer-events: none;
+    font-weight: 750;
+    font-size: 75px;
+    opacity: 0;
+}
+.vehicleNameOverlayText h1{
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-weight: 750;
+    font-size: 75px;
+}
+.vehicleName{
+    width: 100%;
+    color: var(--red);
+    text-align: center;
+    padding: 5%;
+    font-weight: 550;
+    font-size: 45px;
+}
+.vehicleImage{
+    width: 100%;
+}

@@ -11,7 +11,7 @@ function loadStylesheets(){
     wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), false, 'all');
     wp_enqueue_style('normalize');
 
-    wp_register_style('style', get_template_directory_uri() . '/styles/style.css', array(), false, 'all');
+    wp_register_style('style', get_template_directory_uri() . '/style.css', array(), false, 'all');
     wp_enqueue_style('style');
 
     wp_register_style('aboutus', get_template_directory_uri() . '/styles/aboutus.css', array(), false, 'all');
@@ -25,6 +25,9 @@ function loadStylesheets(){
 
     wp_register_style('news', get_template_directory_uri() . '/styles/news.css', array(), false, 'all');
     wp_enqueue_style('news');
+
+    wp_register_style('vehicles', get_template_directory_uri() . '/styles/vehicles.css', array(), false, 'all');
+    wp_enqueue_style('vehicles');
 }
 
 add_action('wp_enqueue_scripts','loadStylesheets');
@@ -182,6 +185,7 @@ function pgdYouthCallout($wp_customize){
         'settings'=>'pgdYouthCalloutSectionImage',
         )));
 }
+add_action('customize_register','pgdYouthCallout');
 
 include_once('functionsAboutUs.php');
 
