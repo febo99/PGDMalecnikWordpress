@@ -63,17 +63,18 @@
                 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                     <div class='col-sm article'>
                         <div class='articleInfo'>
+                            <h2><?php the_title(); ?></h2>
                             <i class="fas fa-calendar-day"></i>
-                            <p class='date'><?php the_date();?></p>
+                            <p class='date'><?php echo get_the_date('d.m.yy');?></p>
                             <i class="fas fa-user"></i>
-                            <p class='author'><?php the_author();?></p>
+                            <p class='author'><?php the_author();?></p><br>
+                            <p class='category'><?php echo the_category(", ");?></p>
                         </div>
                         <div class='articleContent'>
-                            <?php the_title(); ?>
                             <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
                             <img class='postThumbnail' src="<?php echo $url;?>">
                             <?php echo the_excerpt(); ?>
-                            <a href="<?php the_permalink(); ?>">Preberi več</a>
+                            <a class='readmore' href="<?php the_permalink(); ?>">Preberi več</a>
                         </div>
                     </div>
                 <?php endforeach; 
