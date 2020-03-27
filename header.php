@@ -6,6 +6,7 @@
     <title>PGD Malečnik</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <body>
     <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#">
@@ -32,8 +33,16 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.php/intervencije">Intervencije</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.php/novice">Novice</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Informacije
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="index.php/novice">Novice</a>
+                <a class="dropdown-item" href="index.php/nasveti">Nasveti</a>
+                <a class="dropdown-item" href="index.php/tel112">112</a>
+                <a class="dropdown-item" href="index.php/povezave">Povezave</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.php/kontakt">Kontakt</a>
