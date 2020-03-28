@@ -283,7 +283,9 @@ footer img{
     display: block;
     margin: 0 auto 0 auto;
 }
-
+a{
+    outline:none
+}
 
 @media(max-width: 768px) {
     nav{
@@ -309,7 +311,7 @@ footer img{
     .description{
         margin: auto 0 ;
         width: 100%;
-        top: 20%;
+        top: 12%;
     }
 
     .description h1{

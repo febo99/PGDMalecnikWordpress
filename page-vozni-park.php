@@ -153,6 +153,7 @@
                         </div>
                     </div>
                 </div>
+                <hr>
                 <div class='row'>
                     <div class='col-sm vehicle'>
                         <img class='vehicleImage' src="<?php echo get_template_directory_uri() ?>/images/kombi.jpg" >

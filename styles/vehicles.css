@@ -18,6 +18,7 @@
 }
 .vehicle{
     position: relative;
+    margin: 5% 0;
     padding: 0;
 }
 .vehicle .row{
@@ -60,9 +61,7 @@
     font-weight: 550;
     font-size: 45px;
 }
-.vehicleImage{
-    width: 100%;
-}
+
 .vehicleList .type{
     font-weight: 550;
 }
