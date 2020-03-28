@@ -38,7 +38,9 @@
     display: flex;
     align-items: center;
 }
-
+.history .col-sm img{
+    width: 100%;
+}
 .historyEntryLeft,.historyEntryRight{
     padding: 10% 0 10% 0;
 }

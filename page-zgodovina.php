@@ -1,11 +1,11 @@
 <?php get_header();?>
     <div class='thumbnail' >
-        <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImage');?>'>
+        <img src='<?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionImageThumbnail');?>'>
     </div>
     <div class='description'>
-        <h1>Zgodovina društva</h1>
+        <h1><?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionTitle'); ?></h1>
         <p>
-        Že od leta 1932 pa vse do danes!
+        <?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionP'); ?>
         </p>
     </div>
     <div class='textInfo'>
@@ -20,14 +20,14 @@
         </div>
     </div>
     <div class='thumbnail' data-aos="fade-up">
-        <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImage');?>'>
+        <img src='<?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionImage0');?>'>
     </div>
     <div class='history'>
         <div class='container'>
             <h1>Pomembni dogodki skozi cas</h1>
             <div class='historyEntryLeft row' data-aos="fade-up" data-aos-duration="1500">
                 <div class='col-sm'>
-                    <img class='historyEntryImage' src='<?php echo get_template_directory_uri() ?>/images/onas.JPG' >
+                <img src='<?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionImage1');?>'>
                 </div>
                 <div class='col-md'>
                     <h3>1932 - 1942</h3>
@@ -56,13 +56,13 @@
                     
                 </div>
                 <div class='col-sm'>
-                <img class='historyEntryImage' src='<?php echo get_template_directory_uri() ?>/images/onas.JPG' >
+                <img src='<?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionImage2');?>'>
                 </div>
             </div>
             <hr>
             <div class='historyEntryLeft row' data-aos="fade-up" data-aos-duration="1500">
                 <div class='col-sm'>
-                    <img class='historyEntryImage' src='<?php echo get_template_directory_uri() ?>/images/onas.JPG' >
+                <img src='<?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionImage3');?>'>
                 </div>
                 <div class='col-md'>
                     <h3>1963 - 1980</h3>
@@ -91,13 +91,13 @@
                     
                 </div>
                 <div class='col-sm'>
-                <img class='historyEntryImage' src='<?php echo get_template_directory_uri() ?>/images/onas.JPG' >
+                <img src='<?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionImage4');?>'>
                 </div>
             </div>
             <hr>
             <div class='historyEntryLeft row' data-aos="fade-up" data-aos-duration="1500">
                 <div class='col-sm'>
-                    <img class='historyEntryImage' src='<?php echo get_template_directory_uri() ?>/images/onas.JPG' >
+                <img src='<?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionImage5');?>'>
                 </div>
                 <div class='col-md'>
                     <h3>2002 - 2010</h3>
@@ -124,7 +124,7 @@
                     </ul>
                 </div>
                 <div class='col-sm'>
-                <img class='historyEntryImage' src='<?php echo get_template_directory_uri() ?>/images/onas.JPG' >
+                <img src='<?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionImage6');?>'>
                 </div>
             </div>
         </div>
