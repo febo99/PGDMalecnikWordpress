@@ -1,0 +1,48 @@
+:root{
+    --gray: #f7edf0;
+    --red: #d61525;
+    --lightGray: #aaaaaf;
+    --darkGray: #403f4c;
+    --darkestGray:#25242e;
+    --lightRed: #e84855;
+    --yellow: #f9dc5c;
+}
+.contact{
+    background-color: #e3e1e1;
+    padding: 5% 0 10% 0;
+}
+#map{
+    width: 100%;
+    height: 60vh;
+}
+
+.contact h2{
+    font-weight: 600;
+    padding-bottom: 5%;
+}
+textarea{
+    resize: none;
+}
+.contactInfo{
+    padding-left: 5%;                
+}
+.bolder{
+    font-weight: 650;
+}
+.contactInfo a{
+    color: var(--lightRed);
+}
+.contact .btn-primary{
+    background-color: var(--lightRed);
+    border-color: var(--lightRed);
+    transition: 0.2s;
+}
+.contact .btn-primary:hover{
+    background-color: var(--red);
+}
+@media(max-width: 768px) {
+    .contact{
+        padding: 25% 0 10% 0;
+    }
+
+}

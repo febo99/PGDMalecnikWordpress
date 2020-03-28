@@ -37,6 +37,9 @@ function loadStylesheets(){
 
     wp_register_style('links', get_template_directory_uri() . '/styles/links.css', array(), false, 'all');
     wp_enqueue_style('links');
+
+    wp_register_style('contact', get_template_directory_uri() . '/styles/contact.css', array(), false, 'all');
+    wp_enqueue_style('contact');
 }
 
 add_action('wp_enqueue_scripts','loadStylesheets');
