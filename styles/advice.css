@@ -1,0 +1,64 @@
+
+.advicePage{
+    background-color: #e3e1e1;
+    padding: 0 0 10% 0;
+}
+.divLink{
+    display: block;
+    color: black;
+    margin: 0;
+    width: 100%;
+}
+.divLink:hover{
+    text-decoration: none;
+    color: black;
+}
+.advicePage h1{
+    margin: 0;
+    text-align: center;
+    padding: 10%;
+}
+.adviceBasic{
+    background-color: white;
+    margin: 0 5% 5% 0;
+    display: flex;
+    padding: 0;
+}
+.adviceImage{
+    display: inline-block;
+    width: 35%;
+    height: 120px;
+    margin: 0;
+}
+.adviceInformationContainer{
+    display: inline-block;
+    align-items: center;
+    margin: 0 0 0 2.5%;
+    width: 60%;
+}
+.adviceInformationContainer .adviceInformation p{
+    margin: 0;
+    padding-left: 1%;
+    font-weight: 550;
+    font-style: italic;
+    font-size: 14px;
+}
+.adviceInformationContainer .adviceInformation h5{
+    margin: 0;
+    font-weight: 550;
+    color: red;
+    font-size: 14px;
+}
+.adviceBasicEmpty{
+    background-color: transparent;
+    margin: 0 5% 5% 0;
+    display: flex;
+    padding: 0;
+}
+@media(max-width: 768px) {
+    .advicePage{
+        background-color: #e3e1e1;
+        padding: 20% 0 10% 0;
+    }
+
+}
