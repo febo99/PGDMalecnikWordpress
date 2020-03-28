@@ -1,9 +1,19 @@
 jQuery(document).ready(function(){
-  jQuery('.vehicleNameOverlay').mouseenter(function(){
-    jQuery('#t').fadeTo(750,1);
+  jQuery('#gvc').mouseenter(function(){
+    jQuery('#vehicleNameGVC').fadeTo(750,1);
+    jQuery(this).fadeTo(750,0.6);
   });
-  jQuery('.vehicleNameOverlay').mouseleave(function(){
-    jQuery('#t').fadeTo(200,0)
+  jQuery('#gvc').mouseleave(function(){
+    jQuery('#vehicleNameGVC').fadeTo(750,0);
+    jQuery(this).fadeTo(750,0);
+  });
+  jQuery('#gvm').mouseenter(function(){
+    jQuery('#vehicleNameGVM').fadeTo(750,1);
+    jQuery(this).fadeTo(750,0.6);
+  });
+  jQuery('#gvm').mouseleave(function(){
+    jQuery('#vehicleNameGVM').fadeTo(750,0);
+    jQuery(this).fadeTo(750,0);
   });
     jQuery('.dropdown').hover(function() {
         jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);

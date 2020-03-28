@@ -9,16 +9,19 @@
 }
 .vehicles{
     background-color: #e3e1e1;
-    padding: 0 0 10% 0;
+    padding: 10% 0 10% 0;
 }
 .vehicles h2{
     text-align: center;
-    padding: 5% 0 5% 0;
+    padding: 10% 0 5% 0;
     text-transform: uppercase;
 }
 .vehicle{
     position: relative;
     padding: 0;
+}
+.vehicle .row{
+    margin: 5% 0;
 }
 .vehicleNameOverlay{
     width: 100%;
@@ -29,13 +32,9 @@
     left:0;
     background-color: var(--red);
     opacity: 0;
-    transition: 0.5s;
 }
 
-.vehicleNameOverlay:hover{
-    opacity: 0.6;
-}
-#t{
+#vehicleNameGVC,#vehicleNameGVM{
     position: absolute;
     top: 30%;
     left: 0;
@@ -47,12 +46,11 @@
     font-size: 75px;
     opacity: 0;
 }
-.vehicleNameOverlayText h1{
-    text-align: center;
-    margin: auto;
-    color: white;
-    font-weight: 750;
-    font-size: 75px;
+.vehicleBasicInfo{
+    padding: 5% 0;
+    width: 35%;
+    margin: 0 auto;
+    text-align: left;
 }
 .vehicleName{
     width: 100%;
@@ -64,4 +62,25 @@
 }
 .vehicleImage{
     width: 100%;
+}
+.vehicleList .type{
+    font-weight: 550;
+}
+.vehicleList ul{
+    list-style-type: none;
+}
+.vehicleImage{
+    width: 100%;
+    padding: 0;
+}
+@media(max-width: 768px) {
+    #vehicleNameGVC,#vehicleNameGVM{
+        font-size: 40px;
+    }
+    .vehicles{
+        padding: 25% 0 10% 0;
+    }
+    .vehicleBasicInfo{
+        width: 100%;
+    }
 }
