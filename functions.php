@@ -34,6 +34,9 @@ function loadStylesheets(){
 
     wp_register_style('tel112', get_template_directory_uri() . '/styles/tel112.css', array(), false, 'all');
     wp_enqueue_style('tel112');
+
+    wp_register_style('links', get_template_directory_uri() . '/styles/links.css', array(), false, 'all');
+    wp_enqueue_style('links');
 }
 
 add_action('wp_enqueue_scripts','loadStylesheets');
