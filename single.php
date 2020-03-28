@@ -14,6 +14,7 @@
                     <span class='date'><?php echo get_the_date('d.m.yy');?></span>
                     <i class="fas fa-user"></i>
                     <span class='author'><?php the_author();?></span>
+                    <span class='category'><?php echo the_category(", ");?></span>
                 </div>
                 <div class='postContent'>
                     <?php the_content() ?>

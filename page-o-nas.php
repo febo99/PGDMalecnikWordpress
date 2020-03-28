@@ -3,7 +3,7 @@
         <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImage');?>'>
     </div>
     <div class='description'>
-        <h1><?php echo get_theme_mod('pgdHistoryThumbnailCalloutSectionTitle'); ?></h1>
+        <h1><?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionTitle'); ?></h1>
         <p>
         <?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionP'); ?>
         </p>
