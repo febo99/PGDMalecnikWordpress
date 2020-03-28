@@ -31,6 +31,9 @@ function loadStylesheets(){
 
     wp_register_style('advice', get_template_directory_uri() . '/styles/advice.css', array(), false, 'all');
     wp_enqueue_style('advice');
+
+    wp_register_style('tel112', get_template_directory_uri() . '/styles/tel112.css', array(), false, 'all');
+    wp_enqueue_style('tel112');
 }
 
 add_action('wp_enqueue_scripts','loadStylesheets');

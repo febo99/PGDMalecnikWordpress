@@ -1,0 +1,18 @@
+.header112{
+    text-align: center;
+}
+.header112 img{
+    width: 25%;
+}
+.content112,.header112{
+    padding: 5% 0;
+}
+.important{
+    font-weight: 650;
+}
+
+@media(max-width: 768px) {
+    .header112{
+        padding-top: 25%;
+    }
+}
