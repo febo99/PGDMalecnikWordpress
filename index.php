@@ -71,7 +71,8 @@
                             <p class='category'><?php echo the_category(", ");?></p>
                         </div>
                         <div class='articleContent'>
-                            <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+                            <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); if($url == null || $url == '') $url = get_template_directory_uri()."/images/logoTona.jpg"; ?>
+                            
                             <img class='postThumbnail' src="<?php echo $url;?>">
                             <?php echo the_excerpt(); ?>
                             <a class='readmore' href="<?php the_permalink(); ?>">Preberi več</a>

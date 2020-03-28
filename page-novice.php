@@ -13,7 +13,7 @@
                 <?php if($counter%2 == 0) echo "<div class='row'>"; ?>
                     <div class='col-sm newsBasic'>
                     <a class='divLink' href="<?php the_permalink(); ?>">
-                        <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+                        <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); if($url == null || $url == '') $url = get_template_directory_uri()."/images/logoTona.jpg";  ?>
                         <img class='newsImage' src="<?php echo $url;?>">
                         <div class='newsInformationContainer'>
                             <div class=newsInformation>

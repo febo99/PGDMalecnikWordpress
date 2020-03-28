@@ -7,7 +7,7 @@
         <div id='postPage'>
             <div class="header container">
                 <h2><?php the_title(); ?></h2>
-                <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+                <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); if($url == null || $url == '') $url = get_template_directory_uri()."/images/logoTona.jpg";  ?>
                 <img class='postThumbnail' src="<?php echo $url;?>">
                 <div class='postData'>
                     <i class="fas fa-calendar-day"></i>
