@@ -40,6 +40,9 @@ function loadStylesheets(){
 
     wp_register_style('contact', get_template_directory_uri() . '/styles/contact.css', array(), false, 'all');
     wp_enqueue_style('contact');
+
+    wp_register_style('notfound', get_template_directory_uri() . '/styles/page404.css', array(), false, 'all');
+    wp_enqueue_style('notfound');
 }
 
 add_action('wp_enqueue_scripts','loadStylesheets');

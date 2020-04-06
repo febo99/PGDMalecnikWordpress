@@ -1,0 +1,23 @@
+:root{
+    --gray: #e3e1e1;
+    --red: #d61525;
+    --lightGray: #aaaaaf;
+    --darkGray: #403f4c;
+    --darkestGray:#25242e;
+    --lightRed: #e84855;
+    --yellow: #f9dc5c;
+}
+.container{
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 10%;
+}
+a{
+    color: var(--lightRed);
+}
+p{
+    margin-bottom: 10%;
+}
