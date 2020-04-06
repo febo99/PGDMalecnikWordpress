@@ -40,7 +40,7 @@ nav a{
 }
 
 .nav-link{
-    font-size: 20px;
+    font-size: 18px;
     color: var(--gray) !important;
     padding: 0;
 }
@@ -286,7 +286,14 @@ footer img{
 a{
     outline:none
 }
-
+@media(max-width: 1350px) {
+    #navbarSupportedContent{
+        margin-left: 0;
+    }
+    .navbar-brand{
+        margin-left: 0;
+    }
+}
 @media(max-width: 768px) {
     nav{
         z-index: 2;

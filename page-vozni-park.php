@@ -156,7 +156,7 @@
                 <hr>
                 <div class='row'>
                     <div class='col-sm vehicle'>
-                        <img class='vehicleImage' src="<?php echo get_template_directory_uri() ?>/images/kombi.jpg" >
+                        <img class='vehicleImage' src="<?php echo get_template_directory_uri() ?>/images/kombi1.jpg" >
                         <div class='vehicleNameOverlay' id='gvm'></div>
                         <h1 id='vehicleNameGVM' unselectable="on">GVM 1</h1>
                     </div>
@@ -188,7 +188,7 @@
                             </div>
                             </div>
                             <div class='col-sm equipmentImage'>
-                                <img class='vehicleImage' src="<?php echo get_template_directory_uri() ?>/images/kombi.jpg" >
+                                <img class='vehicleImage' src="<?php echo get_template_directory_uri() ?>/images/kombi2.jpg" >
                             </div>
                         </div>
 
