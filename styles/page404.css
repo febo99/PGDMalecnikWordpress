@@ -7,17 +7,17 @@
     --lightRed: #e84855;
     --yellow: #f9dc5c;
 }
-.container{
+.container404{
     text-align: center;
 }
-h1{
+.container404 h1{
     text-transform: uppercase;
     font-weight: 550;
     margin-bottom: 10%;
 }
-a{
+.container404 a{
     color: var(--lightRed);
 }
-p{
+.container404 p{
     margin-bottom: 10%;
 }
