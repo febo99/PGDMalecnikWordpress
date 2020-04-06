@@ -22,8 +22,9 @@
                     <div class='col-sm vehicle'>
                         <div class='vehiclePart'>
                             <div class='vehicleBasicInfo'>
+                            <h3>Osnovni podatki</h3>
                                 <ul>
-                                    <li><span class='type'>Podvozje:</span> IVECO EUROCARGO ML 140 E 24W 
+                                    <li><span class='type'>Podvozje:</span> Iveco Eurocargo ML 140 E 24W 
                                     <li><span class='type'>Leto izdelave:</span> 2005 
                                     <li><span class='type'>Nadgradnja:</span> Varkar 
                                     <li><span class='type'>Posadka:</span> 1+6
@@ -156,7 +157,7 @@
                 <hr>
                 <div class='row'>
                     <div class='col-sm vehicle'>
-                        <img class='vehicleImage' src="<?php echo get_template_directory_uri() ?>/images/kombi1.jpg" >
+                        <img class='vehicleImage' src="<?php echo get_template_directory_uri() ?>/images/gvc.jpg" >
                         <div class='vehicleNameOverlay' id='gvm'></div>
                         <h1 id='vehicleNameGVM' unselectable="on">GVM 1</h1>
                     </div>
@@ -165,6 +166,7 @@
                     <div class='col-sm vehicle'>
                         <div class='vehiclePart'>
                             <div class='vehicleBasicInfo'>
+                                <h3>Osnovni podatki</h3>
                                 <ul>
                                     <li><span class='type'>Osnova:</span> Opel Vivaro
                                     <li><span class='type'>Leto izdelave:</span> 2017 
@@ -188,13 +190,9 @@
                             </div>
                             </div>
                             <div class='col-sm equipmentImage'>
-                                <img class='vehicleImage' src="<?php echo get_template_directory_uri() ?>/images/kombi2.jpg" >
+                                <img class='vehicleImage' src="<?php echo get_template_directory_uri() ?>/images/gvc.jpg" >
                             </div>
                         </div>
-
-
-
-
                     </div>
                 </div>
             </div>

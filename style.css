@@ -286,6 +286,17 @@ footer img{
 a{
     outline:none
 }
+footer{
+    position: relative;
+}
+#footer{
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+}
 @media(max-width: 1350px) {
     #navbarSupportedContent{
         margin-left: 0;
