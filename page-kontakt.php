@@ -1,6 +1,6 @@
 <?php get_header();?>
     <div class='thumbnail' >
-        <img id='map' src='<?php echo get_template_directory_uri()."/images/map.png";?>'>
+    <iframe id='map' frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ0zZYg9Nwb0cRPgX8jf6h8x0&key=AIzaSyDkStH3J6PtcoVpmNfJVw4kcn3QVWG7JZY" allowfullscreen></iframe> 
     </div>
     <div class='contact'>
         <div class='container'>
