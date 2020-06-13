@@ -23,8 +23,15 @@ function pgdAboutUsThumbnailCallout($wp_customize){
     $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionImageJuniors2',array());
     $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionImageJuniors3',array());
     $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionImageJuniors',array());
+
+    $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionMembersHeader', array('default' => 'Članice in člani'));
+    $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionMembersP', array('default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sem dui, varius consequat massa in, eleifend viverra ante. Morbi id odio a justo dictum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla faucibus vel elit vitae pellentesque. Cras non felis quis nibh placerat auctor at a tortor. Morbi congue, diam nec elementum congue, magna nunc blandit elit, eget semper nibh ante non sapien. Vestibulum libero tellus, faucibus eu nulla sed, euismod malesuada nibh. Donec enim arcu, commodo sed mi ac, interdum pellentesque ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque a interdum neque, in convallis nunc. Nulla magna lacus, fringilla non ante vitae, elementum fringilla ligula. Praesent sem justo, viverra in sapien vel, venenatis consectetur augue. Curabitur accumsan commodo lorem. Nulla viverra massa nisi, vel maximus massa auctor nec. Morbi tristique porta maximus. Duis a metus tempor, iaculis velit a, sodales tortor. Quisque vel lacus in justo tristique eleifend. Etiam at lorem at sem lobortis pretium eget sed nulla. Aliquam blandit neque sit amet nibh varius, at dictum augue aliquam. Etiam ac malesuada nisl, id pellentesque orci. Nunc convallis nisl non elit vestibulum faucibus. Proin pulvinar ex risus. '));
+    $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionImageMembers1',array());
+    $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionImageMembers2',array());
+    $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionImageMembers3',array());
+    $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionImageMembers',array());
     
-    $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionVeteransHeader', array('default' => 'Veterani'));
+    $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionVeteransHeader', array('default' => 'Starejši gasilci'));
     $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionVeteransP', array('default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sem dui, varius consequat massa in, eleifend viverra ante. Morbi id odio a justo dictum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla faucibus vel elit vitae pellentesque. Cras non felis quis nibh placerat auctor at a tortor. Morbi congue, diam nec elementum congue, magna nunc blandit elit, eget semper nibh ante non sapien. Vestibulum libero tellus, faucibus eu nulla sed, euismod malesuada nibh. Donec enim arcu, commodo sed mi ac, interdum pellentesque ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque a interdum neque, in convallis nunc. Nulla magna lacus, fringilla non ante vitae, elementum fringilla ligula. Praesent sem justo, viverra in sapien vel, venenatis consectetur augue. Curabitur accumsan commodo lorem. Nulla viverra massa nisi, vel maximus massa auctor nec. Morbi tristique porta maximus. Duis a metus tempor, iaculis velit a, sodales tortor. Quisque vel lacus in justo tristique eleifend. Etiam at lorem at sem lobortis pretium eget sed nulla. Aliquam blandit neque sit amet nibh varius, at dictum augue aliquam. Etiam ac malesuada nisl, id pellentesque orci. Nunc convallis nisl non elit vestibulum faucibus. Proin pulvinar ex risus. '));
     $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionImageVeterans1',array());
     $wp_customize->add_setting('pgdAboutUsThumbnailCalloutSectionImageVeterans2',array());
@@ -125,9 +132,39 @@ function pgdAboutUsThumbnailCallout($wp_customize){
         'section'=>'pgdAboutUsThumbnailCalloutSection',
         'settings'=>'pgdAboutUsThumbnailCalloutSectionImageJuniors',
         )));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdAboutUsThumbnailCalloutSectionMembersHeaderControl',array(
+        'label'=>'Četrti naslov',
+        'section'=>'pgdAboutUsThumbnailCalloutSection',
+        'settings'=>'pgdAboutUsThumbnailCalloutSectionMembersHeader')));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdAboutUsThumbnailCalloutSectionMembersPControl',array(
+        'type' => 'textarea',
+        'label'=>'Četrti opis',
+        'section'=>'pgdAboutUsThumbnailCalloutSection',
+        'settings'=>'pgdAboutUsThumbnailCalloutSectionMembersP')));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdAboutUsThumbnailCalloutSectionImageMembers1Control',array(
+        'label'=>'Slika 1 v galeriji članic in članov',
+        'section'=>'pgdAboutUsThumbnailCalloutSection',
+        'settings'=>'pgdAboutUsThumbnailCalloutSectionImageMembers1',
+        )));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdAboutUsThumbnailCalloutSectionImageMembers2Control',array(
+        'label'=>'Slika 2 v galeriji članic in članov',
+        'section'=>'pgdAboutUsThumbnailCalloutSection',
+        'settings'=>'pgdAboutUsThumbnailCalloutSectionImageMembers2',
+        )));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdAboutUsThumbnailCalloutSectionImageMembers3Control',array(
+        'label'=>'Slika 3 v galeriji članic in članov',
+        'section'=>'pgdAboutUsThumbnailCalloutSection',
+        'settings'=>'pgdAboutUsThumbnailCalloutSectionImageMembers3',
+        )));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdAboutUsThumbnailCalloutSectionImageMembersControl',array(
+        'label'=>'Slika pod sekcijo članic in članov',
+        'section'=>'pgdAboutUsThumbnailCalloutSection',
+        'settings'=>'pgdAboutUsThumbnailCalloutSectionImageMembers',
+        )));
     
     $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdAboutUsThumbnailCalloutSectionVeteransHeaderControl',array(
-        'label'=>'Četrti naslov',
+        'label'=>'Peti naslov',
         'section'=>'pgdAboutUsThumbnailCalloutSection',
         'settings'=>'pgdAboutUsThumbnailCalloutSectionVeteransHeader')));
     $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdAboutUsThumbnailCalloutSectionVeteransPControl',array(
