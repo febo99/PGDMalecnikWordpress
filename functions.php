@@ -41,6 +41,9 @@ function loadStylesheets(){
     wp_register_style('contact', get_template_directory_uri() . '/styles/contact.css', array(), false, 'all');
     wp_enqueue_style('contact');
 
+    wp_register_style('joinus', get_template_directory_uri() . '/styles/joinus.css', array(), false, 'all');
+    wp_enqueue_style('joinus');
+
     wp_register_style('notfound', get_template_directory_uri() . '/styles/page404.css', array(), false, 'all');
     wp_enqueue_style('notfound');
 }
@@ -205,6 +208,7 @@ add_action('customize_register','pgdYouthCallout');
 include_once('functionsAboutUs.php');
 include_once('functionsHistory.php');
 include_once('functionsVehicle.php');
+include_once('functionsJoinUs.php');
 
 function pgdFooterCallout($wp_customize){
     $wp_customize->add_section('pgdFooterCalloutSection',array('title'=>'Noga'));

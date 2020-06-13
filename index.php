@@ -49,7 +49,7 @@
         <div class='youthText'>
             <h1><?php echo get_theme_mod('pgdYouthCalloutSectionHeader');?></h1>
             <p><?php echo get_theme_mod('pgdYouthCalloutSectionP');?></p>
-            <button><?php echo get_theme_mod('pgdYouthCalloutSectionButton');?></button>
+            <button onclick='location.href="index.php/pridruzi-se"'><?php echo get_theme_mod('pgdYouthCalloutSectionButton');?></button>
         </div>
     </div>
     <div class='actions'>

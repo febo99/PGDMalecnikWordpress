@@ -16,7 +16,7 @@
         </p>
         </div>
     </div>
-    <div class='pioneers thumbnail'>
+    <div id='pionirji' class='pioneers thumbnail'>
     <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageONas');?>'>
     </div>
     <div class='pioneersInfo'>
@@ -40,7 +40,7 @@
             </div>
         </div>
     </div>
-    <div class='juniors thumbnail'>
+    <div id='mladinci' class='juniors thumbnail'>
         <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImagePioneers');?>'>
     </div>
     <div class='juniorsInfo'>
@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class='members thumbnail'>
+    <div id='clani' class='members thumbnail'>
         <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageJuniors');?>'>
     </div>
     <div class='membersInfo'>
@@ -88,7 +88,7 @@
             </div>
         </div>
     </div>
-    <div class='veterans thumbnail'>
+    <div id='starejsi-gasilci' class='veterans thumbnail'>
         <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageMembers');?>'>
     </div>
     <div class='veteransInfo'>
@@ -112,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class='operatives thumbnail'>
+    <div id='operativna-enota' class='operatives thumbnail'>
         <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageVeterans');?>'>
     </div>
     <div class='operativeInfo'>

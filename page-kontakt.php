@@ -26,6 +26,7 @@
                         <span class="bolder">Telefon</span><br><a href="tel:+38624730000">+3862473 0000</a><br>
                         <span class="bolder">Email</span><br><a href="mailto:pgd.malecnik@triera.net">pgd.malecnik@triera.net</a><br>
                         <span class="bolder">Na voljo</span><br>24/7<br>
+                        <span class="bolder">Pridruži se nam</span><br><a href="index.php/pridruzi-se">Pridruži se</a><br>
                 </div>
             </div>
         </div>
