@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div id='clani' class='members thumbnail'>
+    <div id='clanice' class='members thumbnail'>
         <img src='<?php echo get_theme_mod('pgdAboutUsThumbnailCalloutSectionImageJuniors');?>'>
     </div>
     <div class='membersInfo'>
