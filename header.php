@@ -13,7 +13,7 @@
             <!-- <img src="<?php echo get_template_directory_uri() ?>/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
             <span class='logoPrefix'><?php echo get_theme_mod('pgdmThumbnailCalloutHeadlinePrefix','PGD');?>.</span><span class='logoSuffix'><?php echo get_theme_mod('pgdmThumbnailCalloutHeadlineSuffix','malečnik');?></span>
         </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button id='navbarButton' class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">

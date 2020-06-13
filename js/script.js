@@ -26,4 +26,12 @@ jQuery(document).ready(function(){
         height = currentHeight > height ? currentHeight : height; 
     });
     jQuery('.articleInfo h2').css('height', height); 
+
+    jQuery('.navbar').on('show.bs.collapse', function(){
+      jQuery('.navbar').css('position','absolute');
+    });
+
+    jQuery('.navbar').on('hidden.bs.collapse', function(){
+      jQuery('.navbar').css('position','relative');
+    });
 });
