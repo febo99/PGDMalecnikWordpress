@@ -10,6 +10,8 @@ function pgdJoinUsThumbnailCallout($wp_customize){
     $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionONasOpis', array('default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sem dui, varius consequat massa in, eleifend viverra ante. Morbi id odio a justo dictum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla faucibus vel elit vitae pellentesque. Cras non felis quis nibh placerat auctor at a tortor. Morbi congue, diam nec elementum congue, magna nunc blandit elit, eget semper nibh ante non sapien. Vestibulum libero tellus, faucibus eu nulla sed, euismod malesuada nibh. Donec enim arcu, commodo sed mi ac, interdum pellentesque ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque a interdum neque, in convallis nunc. Nulla magna lacus, fringilla non ante vitae, elementum fringilla ligula. Praesent sem justo, viverra in sapien vel, venenatis consectetur augue. Curabitur accumsan commodo lorem. Nulla viverra massa nisi, vel maximus massa auctor nec. Morbi tristique porta maximus. Duis a metus tempor, iaculis velit a, sodales tortor. Quisque vel lacus in justo tristique eleifend. Etiam at lorem at sem lobortis pretium eget sed nulla. Aliquam blandit neque sit amet nibh varius, at dictum augue aliquam. Etiam ac malesuada nisl, id pellentesque orci. Nunc convallis nisl non elit vestibulum faucibus. Proin pulvinar ex risus. '));
     $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionImageONas',array());
 
+    $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionSpacerHeading', array('default' => 'Zakaj se pridružiti gasilcem iz Malečnik'));
+
     $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionImageJoinUs1',array());
     $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionImageJoinUs2',array());
     $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionImageJoinUs3',array());
@@ -20,6 +22,9 @@ function pgdJoinUsThumbnailCallout($wp_customize){
     $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackText1',array());
     $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackText2',array());
     $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackText3',array());
+    $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackUser1',array());
+    $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackUser2',array());
+    $wp_customize->add_setting('pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackUser3',array());
 
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionTitleControl',array(
@@ -75,7 +80,13 @@ function pgdJoinUsThumbnailCallout($wp_customize){
         'settings'=>'pgdJoinUsThumbnailCalloutSectionImageJoinUs3',
         )));
 
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionImageJoinUs1Control',array(
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionSpacerHeadingControl',array(
+        'label'=>'Naslov pred mnenji',
+        'section'=>'pgdJoinUsThumbnailCalloutSection',
+        'settings'=>'pgdJoinUsThumbnailCalloutSectionSpacerHeading',
+        )));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionImageJoinUsProfile1Control',array(
         'label'=>'Slika 1 v mnenjih',
         'section'=>'pgdJoinUsThumbnailCalloutSection',
         'settings'=>'pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedback1',
@@ -84,7 +95,11 @@ function pgdJoinUsThumbnailCallout($wp_customize){
             'label'=>'Mnenje 1',
             'section'=>'pgdJoinUsThumbnailCalloutSection',
             'settings'=>'pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackText1')));
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionImageJoinUs2Control',array(
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionFeedbackUser1',array(
+            'label'=>'Oseba 1',
+            'section'=>'pgdJoinUsThumbnailCalloutSection',
+            'settings'=>'pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackUser1')));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionImageJoinUsProfile2Control',array(
         'label'=>'Slika 2 v mnenjih',
         'section'=>'pgdJoinUsThumbnailCalloutSection',
         'settings'=>'pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedback2',
@@ -93,7 +108,11 @@ function pgdJoinUsThumbnailCallout($wp_customize){
             'label'=>'Mnenje 2',
             'section'=>'pgdJoinUsThumbnailCalloutSection',
             'settings'=>'pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackText2')));
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionImageJoinUs3Control',array(
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionFeedbackUser2',array(
+            'label'=>'Oseba 2',
+            'section'=>'pgdJoinUsThumbnailCalloutSection',
+            'settings'=>'pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackUser2')));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionImageJoinUsProfile3Control',array(
         'label'=>'Slika 3 v mnenjih',
         'section'=>'pgdJoinUsThumbnailCalloutSection',
         'settings'=>'pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedback3',
@@ -102,6 +121,10 @@ function pgdJoinUsThumbnailCallout($wp_customize){
             'label'=>'Mnenje 3',
             'section'=>'pgdJoinUsThumbnailCalloutSection',
             'settings'=>'pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackText3')));
+        $wp_customize->add_control(new WP_Customize_Control($wp_customize,'pgdJoinUsThumbnailCalloutSectionFeedbackUser3',array(
+            'label'=>'Oseba 3',
+            'section'=>'pgdJoinUsThumbnailCalloutSection',
+            'settings'=>'pgdJoinUsThumbnailCalloutSectionImageJoinUsFeedbackUser3')));
 
     
     
